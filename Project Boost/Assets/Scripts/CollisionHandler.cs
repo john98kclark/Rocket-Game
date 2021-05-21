@@ -5,18 +5,28 @@ public class CollisionHandler : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        switch (collision.gameObject.tag)
+
+        var platform = collision.gameObject.GetComponent<Platform>();
+        if(platform == null)
         {
-            case "Friendly":
-                Debug.Log("this thing is friendly");
-                break;
-            case "Finish":
-                LoadNextLevel();
-                break;
-            default:
-                ReloadLevel();
-                break;
+            ReloadLevel();
         }
+        else
+        {
+            switch (platform.type)
+            {
+                case Platform.Type.Start:
+                    Debug.Log("this thing is friendly");
+                    break;
+                case Platform.Type.End:
+                    LoadNextLevel();
+                    break;
+
+
+
+            }
+        }
+       
     }
     void LoadNextLevel()
     {
