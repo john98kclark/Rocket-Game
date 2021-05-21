@@ -15,10 +15,10 @@ public class CollisionHandler : MonoBehaviour
         {
             switch (platform.type)
             {
-                case Platform.Type.Start:
+                case PlatformType.Start:
                     Debug.Log("this thing is friendly");
                     break;
-                case Platform.Type.End:
+                case PlatformType.End:
                     LoadNextLevel();
                     break;
 

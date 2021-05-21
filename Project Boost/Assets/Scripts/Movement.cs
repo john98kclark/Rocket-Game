@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(AudioSource))]
 public class Movement : MonoBehaviour
 {
+    [Header("Physics")]
+    [Range(100,2500)]
+    [Tooltip("Set the speed of the Rocket")]
     [SerializeField] float mainThrust = 100f;
     [SerializeField] float rotationThrust = 1f;
     Rigidbody rb;
