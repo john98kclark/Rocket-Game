@@ -209,13 +209,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.48836428, y: 0.00091074297, z: 0.21362719, w: 0.84608686}
+  m_LocalPosition: {x: -2.1, y: 6.6, z: 3.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 55.691, y: 21.896, z: 40.009}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: 0.030043488, z: -0, w: 0.9995486}
-  m_LocalPosition: {x: -18.8, y: 27.6, z: -84.8}
+  m_LocalPosition: {x: -4.08, y: 27.6, z: -85.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -363,10 +363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5014335947876808626, guid: 27ba159fad979a94bb7f780cf2e3d9ac, type: 3}
-      propertyPath: mainThrust
-      value: 1500.06
-      objectReference: {fileID: 0}
     - target: {fileID: 5014335947876808627, guid: 27ba159fad979a94bb7f780cf2e3d9ac, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -472,6 +468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LandingPad
       objectReference: {fileID: 0}
+    - target: {fileID: 5056884407896917369, guid: 814088c1ffdbfd54aa178b1bad77fe66, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 814088c1ffdbfd54aa178b1bad77fe66, type: 3}
 --- !u!1001 &7756407259720936017
@@ -484,6 +484,10 @@ PrefabInstance:
     - target: {fileID: 7756407258929945489, guid: 9c3a7ce043f1f4c46b7bccb85bc229e3, type: 3}
       propertyPath: m_Name
       value: LaunchPad
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756407258929945489, guid: 9c3a7ce043f1f4c46b7bccb85bc229e3, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
       objectReference: {fileID: 0}
     - target: {fileID: 7756407258929945493, guid: 9c3a7ce043f1f4c46b7bccb85bc229e3, type: 3}
       propertyPath: m_RootOrder
