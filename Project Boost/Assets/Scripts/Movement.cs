@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
 
     [Header("Physics")]
-    [Range(100,2500)]
+    [Range(100, 2500)]
     [Tooltip("Set the speed of the Rocket")]
     // PARAMETERS - for tuning, typically set in the editor
     // CACHE - e.g. references for readability or speed
@@ -28,9 +28,9 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       rb = GetComponent<Rigidbody>();
+            rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
-    } 
+    }
 
     // Update is called once per frame
     void Update()

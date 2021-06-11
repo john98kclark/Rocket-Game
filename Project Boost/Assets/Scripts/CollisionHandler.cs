@@ -14,7 +14,7 @@ public class CollisionHandler : MonoBehaviour
 
     bool isTransitioning = false;
 
-     void Start()
+    void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
@@ -23,6 +23,15 @@ public class CollisionHandler : MonoBehaviour
 
         if (isTransitioning) { return; }
         var platform = collision.gameObject.GetComponent<Platform>();
+        if (!platform)
+        {
+            StartCrashSequence();
+            return;
+        }
+
+
+
+
         switch (platform.type)
         {
             case PlatformType.Start:
@@ -31,9 +40,7 @@ public class CollisionHandler : MonoBehaviour
             case PlatformType.End:
                 StartSuccessSequence();
                 break;
-            default:
-                StartCrashSequence();
-                break;
+
 
         }
 
